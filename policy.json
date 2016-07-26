@@ -1,0 +1,16 @@
+{ "expiration": "2016-12-30T23:59:59.000Z",
+  "conditions": [
+    {"bucket": "jyurek-testing"},
+    ["starts-with", "$key", "direct/"],
+    {"acl": "public-read"},
+    {"success_action_redirect": "http://jyurek.s3.amazonaws.com/ireland-cliffs-of-moher.jpg"},
+    ["starts-with", "$Content-Type", "image/"],
+    {"x-amz-meta-uuid": "19365927556233"},
+    {"x-amz-server-side-encryption": "AES256"},
+    ["starts-with", "$x-amz-meta-tag", ""],
+
+    {"x-amz-credential": "AKIAIBROJVVLXKTB2UOQ/20160726/us-east-1/s3/aws4_request"},
+    {"x-amz-algorithm": "AWS4-HMAC-SHA256"},
+    {"x-amz-date": "20160726T000000Z" }
+  ]
+}
